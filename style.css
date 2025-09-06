@@ -1,0 +1,63 @@
+body {
+  font-family: 'Tahoma', sans-serif;
+  margin: 0;
+  background: #111;
+  color: white;
+}
+
+header {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+header .logo {
+  height: 50px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #87CEEB; /* ??? ?????? */
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/banner.jpg');
+  background-size: cover;
+  color: gold;
+}
+
+h1, h2 {
+  color: gold;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #000;
+  margin-top: 30px;
+}
