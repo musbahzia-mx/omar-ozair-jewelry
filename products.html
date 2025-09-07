@@ -1,0 +1,55 @@
+<div id="modal7" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal7')">&times;</span>
+    <h2>Set7 - Elegant Sapphire Set</h2>
+    <img src="images/product7.jpg" alt="Set7">
+    <p>Elegant sapphire set with rich color, designed for luxury and style.</p>
+  </div>
+</div>
+
+<div id="modal8" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal8')">&times;</span>
+    <h2>Set8 - Exclusive Platinum Set</h2>
+    <img src="images/product8.jpg" alt="Set8">
+    <p>Exclusive platinum set combining durability and luxury design.</p>
+  </div>
+</div>
+
+<div id="modal9" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal9')">&times;</span>
+    <h2>Set9 - Modern Titanium Set</h2>
+    <img src="images/product9.jpg" alt="Set9">
+    <p>Modern titanium set with sleek design for a contemporary luxury look.</p>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Omar Ozair Jewelry. All Rights Reserved.
+</footer>
+
+<script>
+  // Open modal
+  function openModal(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  // Close modal
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+
+  // Close modal on clicking outside content
+  window.onclick = function(event) {
+    let modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    });
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease-in-out;
+}
+.about-container img, .contact-container img {
+  display: block;
+  margin: 30px auto;
+  max-width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+  transition: transform 0.3s;
+}
+.about-container img:hover, .contact-container img:hover {
+  transform: scale(1.05);
+}
+.about-container h2, .contact-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 10px #000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
