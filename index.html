@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Omar Ozair Jewelry — Home</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo-wrap">
+        <a href="index.html"><img src="images/logo.png" alt="Omar Ozair Jewelry" class="logo"></a>
+      </div>
+      <nav id="navbar" class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="cta-shop" href="products.html">Shop Now</a>
+        <button class="menu-toggle" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Slider -->
+    <section class="hero-section">
+      <div class="slider" id="slider">
+        <div class="slide active" style="background-image: url('images/banner1.jpg')">
+          <div class="slide-overlay">
+            <h1 class="hero-title">Omar Ozair Jewelry</h1>
+            <p class="hero-sub">Unique jewelry for your special moments</p>
+            <div class="hero-actions">
+              <a href="products.html" class="btn btn-gold">Explore Collection</a>
+              <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('images/banner2.jpg')">
+          <div class="slide-overlay">
+            <h1 class="hero-title">Authentic Quality & Timeless Designs</h1>
+            <p class="hero-sub">Art and beauty in every piece — imported from Dubai</p>
+            <div class="hero-actions">
+              <a href="products.html" class="btn btn-gold">Explore Collection</a>
+              <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('images/banner3.jpg')">
+          <div class="slide-overlay">
+            <h1 class="hero-title">Crafted for Memorable Moments</h1>
+            <p class="hero-sub">Timeless pieces, exquisite finishes</p>
+            <div class="hero-actions">
+              <a href="products.html" class="btn btn-gold">Explore Collection</a>
+              <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <button class="slide-prev" onclick="prevSlide()"><i class="fa fa-chevron-left"></i></button>
+        <button class="slide-next" onclick="nextSlide()"><i class="fa fa-chevron-right"></i></button>
+        <div class="slider-dots" id="slider-dots"></div>
+      </div>
+      <div class="promo-strip">
+        <span class="promo-text">New arrivals • Imported from Dubai • Free consultations on custom designs</span>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="quick-features container">
+      <div class="feature">
+        <i class="fa fa-shipping-fast fa-2x"></i>
+        <h4>Fast Delivery</h4>
+        <p>Secure shipping nationwide</p>
+      </div>
+      <div class="feature">
+        <i class="fa fa-gem fa-2x"></i>
+        <h4>Premium Quality</h4>
+        <p>Authentic materials & expert craftsmanship</p>
+      </div>
+      <div class="feature">
+        <i class="fa fa-headset fa-2x"></i>
+        <h4>Personalized Service</h4>
+        <p>Consultation & custom orders</p>
+      </div>
+    </section>
+  </main>
